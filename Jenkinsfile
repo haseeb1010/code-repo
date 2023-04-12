@@ -4,7 +4,7 @@ pipeline {
         stage('Build') { 
             steps {
                 // 
-              sh "echo 'text to append_add_here' >> haseeb"
+              sh "echo 'my first build' >> haseeb"
             }
         }
         stage('Test') { 
