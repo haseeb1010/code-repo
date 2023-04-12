@@ -16,7 +16,7 @@ pipeline {
         stage('Deploy') { 
             steps {
                 // 
-              sh "scp ./ root@172.17.0.4:~/"
+              sh "scp -r /var/jenkins_home/workspace/Test/* root@172.17.0.4:~/"
             }
         }
     }
